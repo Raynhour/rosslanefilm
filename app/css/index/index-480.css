@@ -1,0 +1,167 @@
+.about__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.about__title {
+  font-size: 22px;
+  text-align: center;
+}
+
+.about__item {
+  padding-top: 20px;
+}
+
+.about__table-title {
+  font-size: 15px;
+}
+
+.about__description {
+  font-size: 15px;
+}
+
+.about__list-title {
+  font-size: 15px;
+}
+
+.about__list {
+  font-size: 15px;
+}
+
+.about__item {
+  font-size: 15px;
+}
+
+.about__date {
+  font-size: 15px;
+}
+
+.about__line {
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+.main {
+  margin-right: 0px;
+  margin-left: 0px;
+  background: -webkit-radial-gradient(rgba(255, 255, 255, 0.1), rgba(66, 65, 79, 0.4));
+  background: radial-gradient(rgba(255, 255, 255, 0.1), rgba(66, 65, 79, 0.4));
+}
+
+.strategy {
+  margin-top: 20px;
+}
+
+.strategy__title {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.strategy__box {
+  padding-bottom: 30px;
+  height: auto;
+}
+
+.strategy__center {
+  margin: 0 auto;
+  display: block;
+}
+
+.strategy__guides_none {
+  display: none;
+}
+
+.strategy .map {
+  margin-top: 30px;
+}
+
+.strategy__mobile-guide {
+  display: block;
+}
+
+.strategy__code-img {
+  padding-bottom: 10px;
+}
+
+.grid_5 {
+  width: 100%;
+  float: none;
+}
+
+.grid_1 {
+  display: none;
+}
+
+.grid_7 {
+  width: 100%;
+}
+
+.general__title {
+  text-align: center;
+  font-size: 14px;
+}
+
+.general__box {
+  width: 100%;
+}
+
+.general__section {
+  font-size: 11px;
+  border-right: 1px solid white;
+}
+
+.general__section_mobile {
+  display: block;
+}
+
+.general__section_desktop {
+  display: none;
+}
+
+.general__section-title {
+  font-size: 9px;
+  border-right: 1px solid white;
+}
+
+.general__section-title_desktop {
+  display: none;
+}
+
+.general__section-title_mobile {
+  display: block;
+  font-size: 9px;
+}
+
+.general__main {
+  display: none;
+  border: none;
+}
+
+.general__main_desktop {
+  text-align: center;
+}
+
+.general__flag {
+  position: unset;
+  text-align: center;
+}
+
+.general__flag img {
+  position: unset;
+  width: 60%;
+}
+
+.general__flag_mobile {
+  display: none;
+}
+
+.general__mobile-p {
+  padding-top: 0%;
+  background: url("/img/euro.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/*# sourceMappingURL=../../css/index/index-480.css.map */

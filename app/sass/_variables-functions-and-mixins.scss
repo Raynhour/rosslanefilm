@@ -1,0 +1,33 @@
+$main-color: #393d45;
+$red-color: #d4495a;
+$green-color: #33b185;
+
+$white-color: #fff;
+$black-color: #000;
+$title-color:#3a3a3a;
+$text-color:#333;
+
+
+//Размеры шрифта
+$stitle:56px;
+$smain:18px;
+
+$mtitle : 25px;
+
+// Шрифты
+$Proxima:"ProximaNova-Regular",sans-serif;
+$ProximaBold: "ProximaNova-Bold",sans-serif;
+$Gotham: "GothamPro",sans-serif;
+$GothamBold: "GothamPro-Bold",sans-serif;
+
+$i: 10;
+@while $i < 101 {
+    .mb-#{$i} { margin-bottom: $i + px; }
+    $i: $i + 10;
+}
+
+$i: 10;
+@while $i < 101 {
+    .mt-#{$i} { margin-top: $i + px; }
+    $i: $i + 10;
+}

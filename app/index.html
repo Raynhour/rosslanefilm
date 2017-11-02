@@ -1,0 +1,968 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test VueJS</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <!-- endbuild -->
+  <!-- build:css2 -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
+  <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+<main class="main">
+  <section class="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 col-xs-offset-0">
+          <img src="img/frsbit.png" alt="" class="about__logo">
+          <h1 class="about__title">Глобальная экосистема FRScoin - Free Society</h1>
+        </div>
+        <div class="col-md-6 col-xs-12">
+<!--           <div class="about__table">
+            <div class="about__table-row">
+              <div class="about__table-title">Создание:</div>
+            </div>
+            <div class="about__table-row">
+              <div class="about__table-title">Торговый символ:</div>
+              <div class="about__table-description">FRScoin</div>
+            </div>
+            <div class="about__table-row">
+              <div class="about__table-title">Год основания</div>
+              <div class="about__table-description">05.2017</div>
+            </div>
+            <div class="about__table-row">
+              <div class="about__table-title">Всего монет:</div>
+              <div class="about__table-description">1 000 000 монет</div>
+            </div>
+            <div class="about__table-row">
+              <div class="about__table-title">Алгоритм</div>
+              <div class="about__table-description">Sidechain</div>
+            </div>
+            <div class="about__table-row">
+              <div class="about__table-title">Система генрации</div>
+              <div class="about__table-description">Delegation PoS(DPoS)</div>
+            </div>
+          </div> -->
+          <table class="about__table">
+            <tr class="about__table-row">
+              <td class="about__table-title about__table-title_grey">Параметры: </td>
+              <td class="about__table-description about__table-description_grey"></td>
+            </tr>
+            <tr class="about__table-row">
+              <td class="about__table-title">Торговый символ: </td>
+              <td class="about__table-description">FRScoin</td>
+            </tr>
+            <tr class="about__table-row">
+              <td class="about__table-title">Год основания: </td>
+              <td class="about__table-description">05.2017</td>
+            </tr>
+            <tr class="about__table-row">
+              <td class="about__table-title">Всего монет: </td>
+              <td class="about__table-description">1 000 000 000</td>
+            </tr>
+            <tr class="about__table-row">
+              <td class="about__table-title">Алгоритм: </td>
+              <td class="about__table-description">Sidechain</td>
+            </tr>
+            <tr class="about__table-row">
+              <td class="about__table-title">Система генерации: </td>
+              <td class="about__table-description">Delegation PoS(DPoS)</td>
+            </tr>
+          </table>
+          <p class="about__description">
+            FRScoin - децентрализованная сеть, такая как Bitcoin, NXT или Bitshares. Однако FRScoin использует упрощенную реализацию исходного алгоритма согласия под названием Делегированное Доказательство Доли. Учередители Free Society решили отойти от традиционной схемы майнинга. Как альтернатива ему рассматривается форджинг, который основывается на алгоритме PoS – аббревиатуре, которая в переводе с английского означает«доказательство хранения». Все транзакции заверяются избранными делегатами, количество делегатов 101 человек.<br>Sidechain – это автономный Blockchain как  подсистема Blockhain FRScoin. Суть в том, что система предоставляет возможность вносить дополнительную информацию, не вклиниваясь при этом в основной блокчейн – цепочку блоков. 
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p class="about__list-title">Сроки интеграции в финансовый сектор:</p>
+          <ol class="about__list">
+            <p class="about__date">2017г. III квартал</p>
+            <li class="about__item">Глобальный блокчейн FRScoin ( FRee Society ) является базовым для создания региональных блокчейнов стран пользователей, т.е  сеть региональных блокчейнов создается  поверх глобального - базового блокчейна FRScoin </li>
+            <p class="about__date">2017г. III квартал</p>
+            <li class="about__item">Моментальная пропускная способность транзакций в системе FRScoin (FRee Society) стала возможна за счет создания сети региональных блокчейнов, тем самым снизив транзакционную нагрузку на генеральный блокчейн FRScoin, что на данный момент не под силу не одной криптовалюте в Мире.</li>
+            <p class="about__date">2017г. IV квартал  - 2018 г.</p>
+            <li class="about__item">Бесплатные транзакции любого объема денежных средств, международные переводы. Масштабное внедрение FRScoin в реальный сектор экономики.</li>
+            <p class="about__date">2018г. II квартал</p>
+            <li class="about__item">Криптовалюту FRScoin можно купить в любом кассомате стран участников, методом сканирования Qr кода и зачисления на Ваш криптокошелек.</li>
+            <p class="about__date">2018г. II квартал</p>
+            <li class="about__item">На все эмитированные региональные криптоденьги на базе FRScoin (Согласно законодательства страны использования) начисляется вся налоговая база в том числе налог на добавленную стоимость (НДС) и др. -  что очень интересно корпоративному бизнесу и устраивает фискальные органы. </li>
+          </ol>
+          <hr class="about__line">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="strategy">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="strategy__wrapper">
+            <h2 class="strategy__title">Стратегия интеграции криптовалюты FRScoin в реальный сектор экономики
+            </h2> 
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img src="img/arrow.png" class="strategy__guides" alt="">
+          <div class="strategy__box">
+            <h3 class="strategy__name">Криптовалюта FRS</h3>
+            <p class="strategy__text">
+              (FRee Society)
+            </p>
+              <img src="img/frsbit.png" alt="" class="strategy__logo">
+              <img src="img/arrow.png" class="strategy__guides" alt="">
+            <p class="strategy__text">Банк хранения исходного кода FRScoin</p>
+            <img src="img/github.png" alt="" class="strategy__img">
+            <img src="img/arrow.png" class="strategy__guides" alt="">
+            <p class="strategy__text">
+                Создание глобального Blockchain для безопасных денег  
+            </p>
+            <img src="img/blockchian.png" alt="" class="strategy__img">
+          </div>
+        </div>
+        <div class="col-md-3">  
+            <img src="img/arrow.png" class="strategy__guides" alt="">
+            <div class="strategy__box"> 
+                <p class="strategy__name strategy__name_box">  
+                  Платежная система без границ
+                </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="strategy__name strategy__name_box"> 
+                  FRS wallet
+                  </p>
+                  <p class="strategy__text">  
+                  безопасный криптокошелек</p>
+                  <img src="img/mobile.png" class="strategy__center strategy__center_mobile" alt="">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="strategy__name strategy__name_box"> 
+                  Платежи FRS
+                  </h3>
+                  <p class="strategy__text">  
+                  по всему Миру при помощи</p>
+                  <p class="strategy__code">  
+                    QR code
+                  </p>
+                  <img src="img/qr-code.png" alt="" class="strategy__code-img">
+                  <img src="img/guides.png" class="strategy__guides_none" alt="">
+                  <img src="img/visa.png" class="strategy__center" alt="">
+                </div>
+                 </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+        <img src="img/arrow.png" class="strategy__guides" alt="">
+            <div class="strategy__box"> 
+          <div class="row"> 
+            <div class="grid__left grid_5">
+              <h3 class="strategy__name">Платформа OpenBit.io</h3>
+              <p class="strategy__text">
+                интегрирует FRScoin в реальный Мир
+              </p>
+              <img src="img/frsbit.png" alt="" class="strategy__logo">
+              <img src="img/arrow.png" class="strategy__guides" alt="">
+              <p class="strategy__name strategy__name_box">Социальна интеграция</p>
+              <p class="strategy__text">  
+                формирование уникального сообщества FRScoin - FRee Society - FReeconomy
+              </p>
+              <img src="img/guidesbot.png" alt="" class="strategy__mobile-guide">
+              <img src="img/world.jpg" class="img-responsive strategy__center" alt="">
+              <img src="img/guidestop.png" alt="" class="strategy__mobile-guide">
+            </div>
+            <div class="grid__left grid_1">
+                <p class="strategy__name  strategy__name_box strategy__name_margin">Crypto активы</p>
+                <p class="strategy__text">  
+                купля/продажа  
+                <img src="img/guides.png" alt="" class="strategy__guides strategy__guides_margin">
+                <p class="strategy__name  strategy__name_box">Crypto активы</p>
+                <p class="strategy__text">  
+                купля/продажа  
+                <img src="img/guidesleft.png" alt="" class="strategy__guides_none strategy__guides_margin">
+            </div>
+            <div class="grid__left grid_7"> 
+              <h3 class="strategy__name">Биржа для открытых торгов токенов и криптоактивов стартапов в рамках ICO</h3>
+              <p class="strategy__text">
+                интегрирует FRScoin в реальный Мир
+              </p>
+              <img src="img/map.jpg" alt="" class="img-responsive map strategy__center">
+            </div> 
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="general">
+    <!-- <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="general__box general__box_right">
+            <h3 class="general__title">Генеральный план интеграции FRScoin в реальный сектор экономики</h3>
+          </div>
+          <div class="clearfix"></div>
+          <div class="general__box general__box_right">
+          <div>
+            <div class="general__section">катировки</div>
+            <div class="general__section">международные эмисиии
+            </div>
+            <div class="general__section">региональные эмисиии</div>
+            <div class="general__section">время
+            </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="general__box general__box_left general__box_orange">
+          <div>
+            <div class="general__name">
+              Создание глобального Blockchain. Международная эмиссия криптовалюты FRScoin
+            </div>
+              <img src="img/eu.jpg" class="img-responsive general__flag" alt=""> 
+            <div class="general__name_mobile"></div>
+            </div>
+          </div>
+          <div class="general__box general__box_right">
+          <div>
+            <div class="general__section"></div>
+            <div class="general__section">1 000 000</div>
+            <div class="general__section"></div>
+            <div class="general__section"></div>
+          <div>
+          </div>
+          <div class="general__box"></div>
+          <div class="general__box"></div>
+          <div class="general__box"></div>
+          <div class="general__box"></div>
+          <div class="general__box"></div>
+        </div>
+      </div>
+    </div> -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+            <h2 class="general__title">
+             Генеральный план интеграции FRScoin в реальный сектор экономики 
+            </h2>
+            <div class="clearfix"></div>
+            <div class="general__box general__box_right">
+              <div class="general__section-title"><span class="general__section-title_desktop">Котировки</span> <span class="general__section-title_mobile">Регион</span></div>
+              <div class="general__section-title">Международные эмисиии</div>
+              <div class="general__section-title">Региональные эмисиии</div>
+              <div class="general__section-title">Время</div>
+            </div>
+            <div class="clearfix"></div>
+
+<!--             <div class="general__box general__box_left">
+  <span class="general__main general_orange general_border-top">
+    <img src="img/eu.jpg" class="general__flag img-responsive" alt="">
+    <span class="general__main_desktop">Создание глобального Blockchain. Международная эмиссия криптовалюты FRScoin</span>
+    <span class="general__main_mobile"></span>
+  </span>
+</div>
+<div class="general__box general__box_right">
+   <div class="general__section general_orange general__mobile-p">
+     <img src="img/euro.jpg" alt="" class="general__flag img-responsive general__flag_mobile">
+   </div>
+  <div class="general__section general_orange general_bold">1 000 000 FRS</div>
+  <div class="general__section general_orange"></div>
+  <div class="general__section general_orange"></div>             
+</div>
+<div class="general__box general__box_left">
+  <div class="general__main general_blue-light">
+    <img src="img/general__arrow.png" alt="">
+  </div>
+</div>
+<div class="general__box general__box_right">
+  <div class="general__section general_blue"></div>
+  <div class="general__section general_blue"></div>
+  <div class="general__section general_blue"></div>
+  <div class="general__section general_blue"></div>
+</div>
+<div class="general__box general__box_left">
+  <span class="general__main general_orange general_border-bot">
+    <span class="general__main_desktop"> Проведение ICO - (Initial coin offering) - первичное размещениие криптовалюты  FRScoin на платформе OpenBIT</span>
+    <span class="general__main_mobile"></span>
+  </span>
+</div>
+<div class="general__box general__box_right">
+   <div class="general__section general_orange">курс  1.0 FRS/1.0 EUR</div>
+  <div class="general__section general_orange general_bold">1 000 000 FRS</div>
+  <div class="general__section general_orange"></div>
+  <div class="general__section general_orange general_bold general_color-white">ICO - 01.09.2017</div>             
+</div>
+<div class="general__box general__box_left">
+  <div class="general__void">
+    <img src="img/general__arrow.png" alt="">
+  </div>   
+</div>
+<div class="general__box general__box_right relative">
+  <div class="general__section general_blue"></div>
+  <div class="general__section general_blue"></div>
+  <div class="general__section general_blue"></div>
+  <div class="general__section general_blue"></div>
+ <div class="general__absolute">
+  <div class="general__section general_orange general_bold">Финансовый оборот</div>
+  <div class="general__section general_orange general_bold">0,00 FRS</div>
+  <div class="general__section general_orange"></div>
+  <div class="general__section general_orange"></div>
+</div>
+</div> -->
+<div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <img src="img/eu.jpg" class="general__flag img-responsive" alt="">
+                <span class="general__main_desktop">Создание глобального Blockchain. Международная эмиссия криптовалюты FRScoin </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general__mobile-p">
+                 <!-- <img src="img/euro.jpg" alt="" class="general__flag img-responsive general__flag_mobile"> -->
+               </div>
+              <div class="general__section general_orange general_bold">1 000 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue">
+              </div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие токенов OBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"><span class="general__section_desktop">курс  1.0 FRS/0.1 OBIT</span> <span class="general__section_mobile">1.0 FRS/1.0 EUR</span></div>
+              <div class="general__section general_orange general_bold"></div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 15.09.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 10.0%</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">Начисление ежесуточно</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__void">
+                <img src="img/general__arrow.png" alt="">
+              </div>   
+            </div>
+            <div class="general__box general__box_right general__section_desktop">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_right general__section_mobile">
+              <div class="general__section-title"><span class="general__section-title_desktop">Котировки</span> <span class="general__section-title_mobile">Регион</span></div>
+              <div class="general__section-title">Международные эмисиии</div>
+              <div class="general__section-title">Региональные эмисиии</div>
+              <div class="general__section-title">Время</div>
+            </div>
+<!-- NEW SECTION -->
+<div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <span class="general__flag" style="width:78px; height: 78px;position:   relative;">
+                  <img src="img/frsplatfom.png" alt="" style="position: absolute;bottom:16px;">
+                </span>
+                <span class="general__main_desktop">Создание глобального Blockchain. Международная эмиссия платформы OpenBIT - токенов OBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general__mobile-p">
+                 <!-- <img src="img/euro.jpg" alt="" class="general__flag img-responsive general__flag_mobile"> -->
+               </div>
+              <div class="general__section general_orange general_bold">1 000 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue">
+              </div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие токенов OBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"><span class="general__section_desktop">курс  1.0 FRS/0.1 OBIT</span> <span class="general__section_mobile">1.0 FRS/1.0 EUR</span></div>
+              <div class="general__section general_orange general_bold"></div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 15.09.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 10.0%</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">Начисление ежесуточно</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__void">
+                <img src="img/general__arrow.png" alt="">
+              </div>   
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+<!-- TABLE SECTION UA --> 
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <img src="img/ua.jpg" class="general__flag img-responsive" alt="">
+                <span class="general__main_desktop">Создание регионального Blockchain FRScoin для Украины - криптовалюта FRS UAH </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 01.11.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие криптовалюты  FRS UAH  на платформе OpenBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange">курс  1.0 FRS/30.0 UAH</div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange">600 000 000 FRS UAH</div>
+              <div class="general__section general_orange general_color-white"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange">0,00 FRS UAH</div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 15.0%</div>
+              <div class="general__section general_orange">100 000 OBIT</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange">до 01.12.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__void">
+                <img src="img/general__arrow.png" alt="">
+              </div>   
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+<!-- END TABLE SECTION -->
+<!-- TABLE SECTION SW --> 
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <img src="img/UK.JPG" class="general__flag img-responsive" alt="">
+                <span class="general__main_desktop">Создание регионального Blockchain FRScoin для Великобритании - криптовалюта FRS GBP </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 01.11.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие криптовалюты  FRS UAH  на платформе OpenBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange">курс  1.0 FRS/30.0 UAH</div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange">600 000 000 FRS UAH</div>
+              <div class="general__section general_orange general_color-white"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange">0,00 FRS UAH</div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 15.0%</div>
+              <div class="general__section general_orange">100 000 OBIT</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange">до 01.12.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__void">
+                <img src="img/general__arrow.png" alt="">
+              </div>   
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+<!-- END TABLE SECTION SW-->
+<!-- TABLE SECTION UK --> 
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <img src="img/UK.JPG" class="general__flag img-responsive" alt="">
+                <span class="general__main_desktop">Создание регионального Blockchain FRScoin для Великобритании - криптовалюта FRS GBP </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 01.11.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие криптовалюты  FRS UAH  на платформе OpenBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange">курс  1.0 FRS/30.0 UAH</div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange">600 000 000 FRS UAH</div>
+              <div class="general__section general_orange general_color-white"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange">0,00 FRS UAH</div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 15.0%</div>
+              <div class="general__section general_orange">100 000 OBIT</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange">до 01.12.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__void">
+                <img src="img/general__arrow.png" alt="">
+              </div>   
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+<!-- END TABLE SECTION UK -->
+<!-- TABLE SECTION RU--> 
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <img src="img/UK.JPG" class="general__flag img-responsive" alt="">
+                <span class="general__main_desktop">Создание регионального Blockchain FRScoin для Великобритании - криптовалюта FRS GBP </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 01.11.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие криптовалюты  FRS UAH  на платформе OpenBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange">курс  1.0 FRS/30.0 UAH</div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange">600 000 000 FRS UAH</div>
+              <div class="general__section general_orange general_color-white"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange">0,00 FRS UAH</div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 15.0%</div>
+              <div class="general__section general_orange">100 000 OBIT</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange">до 01.12.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__void">
+                <img src="img/general__arrow.png" alt="">
+              </div>   
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+<!-- END TABLE SECTION RU -->
+<!-- TABLE SECTION ISRAEL --> 
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <img src="img/UK.JPG" class="general__flag img-responsive" alt="">
+                <span class="general__main_desktop">Создание регионального Blockchain FRScoin для Великобритании - криптовалюта FRS GBP </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 01.11.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие криптовалюты  FRS UAH  на платформе OpenBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange">курс  1.0 FRS/30.0 UAH</div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange">600 000 000 FRS UAH</div>
+              <div class="general__section general_orange general_color-white"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange">0,00 FRS UAH</div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 15.0%</div>
+              <div class="general__section general_orange">100 000 OBIT</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange">до 01.12.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__void">
+                <img src="img/general__arrow.png" alt="">
+              </div>   
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+<!-- END TABLE SECTION ISRAEL-->
+<!-- TABLE SECTION TURKEY--> 
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-top">
+                <img src="img/UK.JPG" class="general__flag img-responsive" alt="">
+                <span class="general__main_desktop">Создание регионального Blockchain FRScoin для Великобритании - криптовалюта FRS GBP </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange general_color-white">ICO - 01.11.2017</div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>
+            </div>
+            <div class="general__box general__box_right">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange">
+                <span class="general__main_desktop">  Проведение ICO - (Initial coin offering) - первичное размещениие криптовалюты  FRS UAH  на платформе OpenBIT</span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange">курс  1.0 FRS/30.0 UAH</div>
+              <div class="general__section general_orange general_bold">20 000 000 FRS</div>
+              <div class="general__section general_orange">600 000 000 FRS UAH</div>
+              <div class="general__section general_orange general_color-white"></div>             
+            </div>
+            <div class="general__box general__box_left">
+              <div class="general__main general_blue-light">
+                <img src="img/general__arrow.png" alt="">
+              </div>  
+            </div>
+            <div class="general__box general__box_right relative">
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+              <div class="general__section general_blue"></div>
+             <div class="general__absolute">
+              <div class="general__section general_orange general_bold">Финансовый оборот</div>
+              <div class="general__section general_orange general_bold">0,00 FRS</div>
+              <div class="general__section general_orange">0,00 FRS UAH</div>
+              <div class="general__section general_orange"></div>
+            </div>
+            </div>
+            <div class="general__box general__box_left">
+              <span class="general__main general_orange general_border-bot">
+                <span class="general__main_desktop"> Распределение капитала от проданой криптовалюты FRS среди держателей токенов OBIT </span>
+                <span class="general__main_mobile"></span>
+              </span>
+            </div>
+            <div class="general__box general__box_right">
+               <div class="general__section general_orange general_bold">дивиденды 15.0%</div>
+              <div class="general__section general_orange">100 000 OBIT</div>
+              <div class="general__section general_orange"></div>
+              <div class="general__section general_orange">до 01.12.2017</div>             
+            </div>
+
+<!-- END TABLE SECTION TURKEY-->
+
+<!--             <div class="general__box general__box_right">
+  <div class="general__section general_blue general__section_height-1"></div>
+  <div class="general__section general_blue general__section_height-1"></div>
+  <div class="general__section general_blue general__section_height-1"></div>
+  <div class="general__section general_blue general__section_height-1"></div>
+</div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<script src="js/libs.min.js"></script>
+<!-- build:js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+.about {
+	&__logo {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	&__title {
+		font-size: 22px;
+		text-align: center;
+	}
+	&__item {
+		padding-top: 20px;
+	}
+	&__table-title {
+		font-size: 15px;
+	}
+	&__description {
+		font-size: 15px;
+	}
+	&__list-title {
+		font-size: 15px;
+	}
+	&__list {
+		font-size: 15px;
+	}
+	&__item {
+		font-size: 15px;
+	}
+	&__date {
+		font-size: 15px;
+	}
+	&__line {
+		float:none;
+		text-align:center;
+		width: 100%;
+	}
+}
+
+.main {
+	margin-right: 0px;
+	margin-left: 0px;
+	    background: radial-gradient(rgba(255,255,255,0.1), rgba(66,65,79,0.4));
+}
+
+.strategy {
+	margin-top: 20px;
+	&__title {
+		line-height: 30px;
+		font-size: 18px;
+	}
+	&__box {
+		padding-bottom: 30px;
+		height: auto;
+	}
+	&__center {
+		margin: 0 auto;
+		display: block;
+
+	}
+	&__guides_none {
+		display: none;
+	}
+	.map {
+		margin-top: 30px;
+	}
+	&__mobile-guide {
+		display: block;
+
+	}
+	&__code-img {
+		padding-bottom: 10px;
+	}
+}
+
+.grid {
+	&_5 {
+		width: 100%;
+		float:none;
+	}
+	&_1 {
+		display: none;
+	}
+	&_7 {
+		width: 100%;
+	}
+}
+
+.general {
+	&__title {
+		text-align:center;
+		font-size: 14px;
+	}
+	&__box {
+		width: 100%;
+	}
+	&__section{
+		font-size: 11px;
+		border-right:1px solid white;
+		&_mobile {
+			display: block;
+		}
+		&_desktop {
+			display: none;
+		}
+		&-title {
+			font-size: 9px;
+			border-right:1px solid white;
+			&_desktop {
+				display: none;
+			}
+			&_mobile {
+				display: block;
+				font-size: 9px;
+			}
+		}
+	}
+	&__main {
+		display: none;
+		border:none;	
+		&_desktop {
+			text-align: center;
+		}
+	}
+	&__flag {
+		position: unset;
+		text-align: center;
+		& img {
+			position: unset;
+			width: 60%;
+		}
+		&_mobile {
+			display: none;
+			
+		}
+	}
+	&__mobile-p {
+		padding-top: 0%;
+		background:url("/img/euro.jpg");
+		background-size:cover;
+		background-position:center center;
+	}
+}

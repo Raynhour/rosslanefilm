@@ -1,0 +1,36 @@
+.strategy {
+	margin-top: 20px;
+	&__title {
+		line-height: 30px;
+		font-size: 18px;
+	}
+	&__box {
+		padding-bottom: 30px;
+		height: auto;
+	}
+	&__center {
+		margin: 0 auto;
+		display: block;
+	}
+	&__guides {
+		&_none {
+			display: none;
+		}
+	}
+	.map {
+		margin-top: 30px;
+	}
+}
+
+.grid {
+	&_5 {
+		width: 100%;
+		float:none;
+	}
+	&_1 {
+		display: none;
+	}
+	&_7 {
+		width: 100%;
+	}
+}
